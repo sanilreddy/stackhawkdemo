@@ -6,6 +6,12 @@ pipeline {
         checkout scm
       }
     }
+    stage("Deploy site") {
+      steps {
+        sh 'pwd'
+//         sh 'cp index.json /var/www/html'
+      }
+    }
     stage ("Pull HawkScan Image") {
       steps {
         sh 'docker pull stackhawk/hawkscan'

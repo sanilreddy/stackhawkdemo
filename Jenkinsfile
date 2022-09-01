@@ -9,7 +9,7 @@ pipeline {
     stage("Deploy site") {
       steps {
         sh 'pwd'
-        sh 'cp index.json /var/www/html'
+        sh 'cp index.html /var/www/html'
       }
     }
     stage ("Pull HawkScan Image") {

@@ -6,7 +6,10 @@ app:
   env: Pre-Production # (required)
   # -- The url of your application to scan --
   host: http://3.7.45.219/index.html # (required)
-
+hawk:
+  startupTimeoutMinutes: 1
+  spider:
+    base: false
 
 # -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
   # Configuration Docs: https://docs.stackhawk.com/hawkscan/configuration/

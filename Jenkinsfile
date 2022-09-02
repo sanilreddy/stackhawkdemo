@@ -26,7 +26,7 @@ pipeline {
           docker run -v ${WORKSPACE}:/hawk:rw -t \
             -e API_KEY=${HAWK_API_KEY} \
             -e NO_COLOR=true \
-            stackhawk/hawkscan
+            stackhawk/hawkscan:2.7.0
         '''
       }
     }

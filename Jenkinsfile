@@ -24,10 +24,9 @@ pipeline {
       }
       steps {
         sh '''
-          docker run -v ${WORKSPACE}:/hawk:rw -t \
-            -e API_KEY=${HAWK_API_KEY} \
-            -e NO_COLOR=true \
-            stackhawk/hawkscan:2.7.0
+          docker run --rm -v ${WORKSPACE}:/hawk:rw --network host \
+            -e API_KEY=${HAWK_API_KEY} -t \
+            stackhawk/hawkscan:latest
         '''
       }
     }

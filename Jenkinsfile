@@ -15,6 +15,7 @@ pipeline {
     stage ("Pull HawkScan Image") {
       steps {
         sh 'docker pull stackhawk/hawkscan'
+        sh 'echo "${WORKSPACE}"'
       }
     }
     stage ("Run HawkScan Test") {

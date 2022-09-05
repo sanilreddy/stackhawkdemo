@@ -5,7 +5,7 @@ app:
   # -- The environment for the applicationId defined in the StackHawk platform. --
   env: Pre-Production # (required)
   # -- The url of your application to scan --
-  host: http://3.110.222.92/index.html # (required)
+  host: https://sanilreddy.github.io/stackhawkdemo # (required)
 hawk:
   startupTimeoutMinutes: 1
   spider:
